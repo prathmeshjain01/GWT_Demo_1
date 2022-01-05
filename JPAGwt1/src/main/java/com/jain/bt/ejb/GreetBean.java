@@ -2,7 +2,7 @@ package com.jain.bt.ejb;
 
 import java.io.Serializable;
 
-import javax.enterprise.context.ApplicationScoped;
+import javax.ejb.Stateless;
 
 import org.jboss.weld.environment.se.Weld;
 import org.jboss.weld.environment.se.WeldContainer;
@@ -11,7 +11,7 @@ import com.jain.bt.cdi.StartupDbService;
 import com.jain.bt.shared.FieldVerifier;
 
 @SuppressWarnings("serial")
-@ApplicationScoped
+@Stateless
 public class GreetBean implements Serializable {
 	
 	public  GreetBean() {
